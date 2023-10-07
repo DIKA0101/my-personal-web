@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  /* font-family: "Silkscreen", cursive; */
+}
+
+body {
+  background-color: rgb(236, 223, 200);
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 10%;
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+.header .logo {
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #21418f;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #21418f;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s;
+  margin-left: 35px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #da8304;
+}
+
+.home {
+  display: flex;
+  /* background-image: url(assets/karakter-org.jpg);
+  background-repeat: no-repeat; */
+  height: 100vh;
+  align-items: center;
+  padding: 0 10%;
+  justify-content: space-between;
+}
+
+.home .home-content {
+  max-width: 600px;
+}
+
+.home .home-content h1 {
+  font-size: 56px;
+  color: #21418f;
+  font-weight: 700;
+}
+
+.home .home-content h3 {
+  font-size: 32px;
+  color: #da8304;
+  font-weight: 700;
+}
+
+.home .home-content p {
+  font-size: 16px;
+}
+
+.karakter-img img {
+  width: 350px;
+  border-radius: 50%;
+  box-shadow: rgba(33, 33, 90, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.icon-font {
+  position: absolute;
+  bottom: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-font a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #21418f;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #21418f;
+  text-decoration: none;
+}
