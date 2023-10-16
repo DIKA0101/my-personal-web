@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal-website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Dikkaisn.</a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="myportfolio.html">MyPortfolio</a></li>
+          <li><a href="blog.html">Article</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Section About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/karakter-org-3.jpg" alt="karakter orang" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Halo! Saya adalah seorang mahasiswa informatika yang sedang
+              mengejar gelar sarjana dalam bidang ini. Website ini adalah wadah
+              di mana saya berbagi pandangan saya tentang perkembangan terbaru
+              dalam dunia teknologi, serta pengalaman saya dalam mengatasi
+              tantangan dalam studi ini.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Design web and App interface</li>
+                <li>
+                  <span>Fullstack Web Development</span><br />web spp
+                  Development
+                </li>
+                <li><span>UI/UX</span><br />Design web and App interface</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>semester 1</span><br />Membuat aplikasi booking bioskop
+                  dengan c++
+                </li>
+                <li>
+                  <span>semester 2</span><br />Membuat game zoombie berbasis
+                  text dengan c++
+                </li>
+                <li>
+                  <span>semester 4</span><br />Design web dan membuat web
+                  Fullstack
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>SMP</span><br />SMPN 3 Kalidawir</li>
+                <li><span>SMK</span><br />SMKN 1 Boyolangu</li>
+                <li><span>Kuliah</span><br />Universitas AMIKOM Yogyakarata</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </body>
+</html>
